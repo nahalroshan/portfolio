@@ -1,5 +1,6 @@
 import "./app.scss";
 import { Contact } from "./components/contact/Contact";
+import { Experience } from "./components/experience/Experience";
 import { Hero } from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import { Parallax } from "./components/parallax/Parallax";
@@ -22,7 +23,7 @@ const App = () => {
       <section>
         <Newsidebar />
       </section>
-
+      <section><Experience /></section>
       <section><Contact /></section>
     </div>
   );
