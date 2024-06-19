@@ -10,11 +10,12 @@ export const Hero = () => {
        
         },
         animate: {
-          x: "220%",
+          x: "-220%",
          
           transition: {
             duration: 20,
-            repeat:Infinity
+            repeat:Infinity,
+            repeatType:"mirror"
           },
         },
       };
@@ -49,9 +50,9 @@ export const Hero = () => {
           </motion.div>
         </motion.div>
       </div>
-      <div className="slidingTextContainer" variants={slide} initial="initial" animate="animate" >
+      <motion.div className="slidingTextContainer" variants={slide} initial="initial" animate="animate" >
         <h2>MongoDB Express React Node</h2>
-      </div>
+      </motion.div>
     </div>
   );
 };
