@@ -19,12 +19,13 @@ const App = () => {
       <section>
         <Parallax />
       </section>
+     
       <Portfolio />
-      <section>
-        <Newsidebar />
-      </section>
-      <section><Experience /></section>
-      <section><Contact /></section>
+    
+    
+     
+      <section ><Experience /></section>
+      <section ><Contact /></section>
     </div>
   );
 };

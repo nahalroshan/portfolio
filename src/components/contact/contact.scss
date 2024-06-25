@@ -36,7 +36,7 @@
                 padding: 10px;
                 background-color: none;
                 border: 1px solid white;
-                color: wheat;
+                color: rgb(17, 16, 15);
                 border-radius: 10px;
 
             }
@@ -48,6 +48,10 @@
                 border-radius: 10px;
 
                
+  &:hover {
+    background-color: darkorange;
+    transform: scale(1.005);
+  }
             }
             
             

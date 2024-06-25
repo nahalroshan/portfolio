@@ -1,91 +1,74 @@
-.skills {
-    .textContainer {
-      text-align: center;
-      margin-bottom: 20px;
-  
-      h1 {
-        font-size: 2rem;
-        color: #333;
-      }
-    }
-  
-    .listSkills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-  
-      .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 150px;
-  
-        .imageContainer {
-          width: 100px;
-          height: 100px;
-          margin-bottom: 10px;.skills {
-            .textContainer {
-              text-align: center;
-              margin-bottom: 20px;
-          
-              h1 {
-                font-size: 2rem;
-                color: #333;
-              }
-            }
-          
-            .listSkills {
-              display: flex;
-              flex-wrap: wrap;
-              gap: 20px;
-              justify-content: center;
-          
-              .wrapper {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                width: 150px;
-          
-                .imageContainer {
-                  width: 100px;
-                  height: 100px;
-                  margin-bottom: 10px;
-          
-                  img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain;
-                  }
-                }
-          
-                .textContainer {
-                  h2 {
-                    font-size: 1.2rem;
-                    color: #666;
-                  }
-                }
-              }
-            }
-          }
-          
-  
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-          }
-        }
-  
-        .textContainer {
-          h2 {
-            font-size: 1.2rem;
-            color: #666;
-          }
-        }
-      }
+.experience {
+  border-bottom: 20px;
+
+  .text {
+    margin-top: 50px;
+  }
+
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: orange;
+    font-size: 56px;
+
+    .progressBar {
+      height: 10px;
+      background-color: white;
     }
   }
-  
+
+  .skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+  }
+
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 60px;
+  }
+
+  .iconWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 71px;
+    height: 62px;
+    border: 1px solid #55489f;
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .git, .psql, .js ,.jst {
+    font-size: 65px;
+    border: 1px solid #55489f;
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .js {
+    color: yellow;
+  }
+  .jst{
+    color: white;
+  }
+
+  .psql {
+    color: rgb(0, 72, 255);
+  }
+
+  p {
+    margin-top: 10px;
+    text-align: center;
+    color: beige;
+    font-size: 16px;
+  }
+}

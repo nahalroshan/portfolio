@@ -31,18 +31,25 @@
         flex-wrap: wrap;
         gap: 50px;
         justify-content: center;
-        margin-top: 100px; /* Adjusted to be more reasonable */
+        margin-top: 200px; /* Adjusted to be more reasonable */
       }
   
       .imageContainer {
-        flex: 1;
+      flex: 1;
         height: 100%;
+        width: 75%;
+        display: flex;
+        margin-top: 60px;
+        margin-left: 20px;
+        justify-content: center;
+        
   
         img {
         
-          height: 50%; /* Adjusted to auto to keep aspect ratio */
+          height: 42%; /* Adjusted to auto to keep aspect ratio */
           object-fit: cover;
           border-radius: 30px;
+          width: 80%;
         }
       }
   
@@ -51,6 +58,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        margin-top: 20px;
   
         h2 {
           font-size: 50px;

@@ -1,68 +1,75 @@
-import React from "react";
-import { motion } from "framer-motion";
-import "./experience.scss";
-
-const items = [
-  {
-    id: 1,
-    title: "React",
-    img: "/react.png",
-  },
-  {
-    id: 2,
-    title: "MongoDB",
-    img: "/mongodb.png",
-  },
-  {
-    id: 3,
-    title: "Python",
-    img: "/python.png",
-  },
-  {
-    id: 4,
-    title: "Java",
-    img: "/java.png",
-  },
-  {
-    id: 5,
-    title: "C",
-    img: "/c.png",
-  },
-  {
-    id: 6,
-    title: "C++",
-    img: "/c++.png",
-  },
-  {
-    id: 7,
-    title: "Node",
-    img: "/node.png",
-  },
-  {
-    id: 8,
-    title: "Tailwind",
-    img: "/tailwind.png",
-  },
-];
+import React from 'react'
+import './experience.scss'
+import { motion } from 'framer-motion'
+import { FaGithub } from "react-icons/fa";
+import { DiPostgresql } from "react-icons/di";
+import { IoLogoJavascript } from "react-icons/io5";
+import { RiNextjsLine } from "react-icons/ri";
+const iconVariants = (duration) => ({
+  initial: { y: -10 },
+  animate: {
+    y: [10, -10],
+    transition: {
+      duration: duration,
+      ease: "linear",
+      repeat: Infinity,
+      repeatType: "reverse"
+    }
+  }
+})
 
 export const Experience = () => {
   return (
-    <div className="skills">
-      <div className="textContainer">
-        <h1>Building products with the greatest technologies</h1>
+    <div className='experience'>
+      <div className="progress">
+        <h1>Technologies</h1>
+        
       </div>
-      <div className="listSkills">
-        {items.map((item) => (
-          <div className="wrapper" key={item.id}>
-            <motion.div className="imageContainer">
-              <img src={item.img} alt={item.title} />
-            </motion.div>
-            <motion.div className="textContainer">
-              <h2>{item.title}</h2>
-            </motion.div>
-          </div>
-        ))}
+      
+      <div className="skills">
+        <div className="icons">
+          <motion.div className="iconWrapper" variants={iconVariants(2.5)} initial="initial" animate="animate">
+            <img src="/react.png" alt="React" />
+            <p>React</p>
+          </motion.div>
+          <motion.div className="iconWrapper" variants={iconVariants(3)} initial="initial" animate="animate">
+        <RiNextjsLine className='jst' />
+        <p>Next</p>
+          </motion.div>
+          <motion.div className="iconWrapper" variants={iconVariants(3.5)} initial="initial" animate="animate">
+            <FaGithub className='git' />
+            <p>GitHub</p>
+          </motion.div>
+          <motion.div className="iconWrapper" variants={iconVariants(4)} initial="initial" animate="animate">
+            <img src="/java.png" alt="Java" />
+            <p>Java</p>
+          </motion.div>
+          <motion.div className="iconWrapper" variants={iconVariants(4.5)} initial="initial" animate="animate">
+            <img src="/mongodb.png" alt="MongoDB" />
+            <p>MongoDB</p>
+          </motion.div>
+          <motion.div className="iconWrapper" variants={iconVariants(5)} initial="initial" animate="animate">
+            <img src="/node.png" alt="Node.js" />
+            <p>Node.js</p>
+          </motion.div>
+          <motion.div className="iconWrapper" variants={iconVariants(5.5)} initial="initial" animate="animate">
+            <img src="/python.png" alt="Python" />
+            <p>Python</p>
+          </motion.div>
+          <motion.div className="iconWrapper" variants={iconVariants(6)} initial="initial" animate="animate">
+            <img src="/tailwind.png" alt="Tailwind" />
+            <p>Tailwind</p>
+          </motion.div>
+          <motion.div className="iconWrapper" variants={iconVariants(6.5)} initial="initial" animate="animate">
+            <DiPostgresql className='psql' />
+            <p>PostgreSQL</p>
+          </motion.div>
+          <motion.div className="iconWrapper" variants={iconVariants(7)} initial="initial" animate="animate">
+            <IoLogoJavascript className='js' />
+            <p>JavaScript</p>
+          </motion.div>
+        </div>
       </div>
     </div>
-  );
-};
+  )
+}
