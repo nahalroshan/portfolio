@@ -47,10 +47,8 @@ export const Hero = () => {
             
             <motion.h1 variants={textVariants}>Full Stack Developer</motion.h1>
             <motion.div variants={textVariants} className="buttons">
-            
-            <a href="https://github.com/nahalroshan" className="git" target="_blank" rel="noopener noreferrer">
-            <button>Link to the resume</button>
-          </a>
+           
+         
           
             </motion.div>
           </motion.div>
